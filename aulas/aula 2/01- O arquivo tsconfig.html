@@ -1,0 +1,27 @@
+Temos a seguinte declaração do arquivo tsconfig.json:
+
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "dist/js",    
+    },
+    "include": [
+        "app/**/*"
+    ]
+}
+
+respeito a configuração:
+
+<!-- 
+    A propriedade "target" indica para o compilator tsc (TypeScript Compiler) para qual versão do Javascript o código escrito em TypeScript deve ser compilado. Isso significa que o resultado final será arquivos Javascript sem qualquer referência para a sintaxe do Typescript.
+
+    Alternativa correta! O navegador só entende a linguagem JavaScript, desta maneira, todo código TypeScript precisa ser compilado para uma sintaxe compatível.
+ -->
+
+ <!-- 
+    A propriedade indica para onde os arquivos compilados indicados pela propriedade "include" serão salvos.
+  -->
+
+  <!-- 
+    A propriedade indica para o compilador onde estão os arquivos ".ts" que ele deve compilar.
+   -->
