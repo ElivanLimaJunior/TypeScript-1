@@ -1,0 +1,26 @@
+<!-- O TypeScript é um superset da ES2015, ou seja, além de suportar os recurso da linguagem desta versão, adiciona outros. Um exemplo é o suporte ao modificador private.
+
+Marque a opção na qual há um erro de compilação do TypeScript de acesso indevido a uma propriedade privada.
+ -->
+
+ <script>
+    
+    class Pessoa {
+
+        private nome;
+        idade;
+
+        constructor(nome, idade) {
+            this.nome = nome;
+            this.idade = idade;
+        }
+    }   
+
+let pessoa = new Pessoa('Barney', 18);
+pessoa.nome = 'Martin';
+
+ </script>
+
+ <!-- 
+    Alternativa correta! Há um erro de compilação. A propriedade nome é declarada com o modificador private, dessa forma, apenas métodos da própria classe podem acessá-la.
+  -->
