@@ -15,13 +15,6 @@ export class NegociacaoController {
 
     adiciona(): void {
         const negociacao = this.criaNegociacao();
-
-        // Usando o readyonly nós não conseguimos alterar o valor com atribuição "="
-        negociacao.data = new Date()
-        // Mas mesmo assim conseguimos usar o setDate() para setar uma outra data para a propriedade.
-        negociacao.data.setDate(12);
-        // Para resolvermos isso precisamos fazer uma programação defensiva. Pois nem voltando a usar os Get nós conseguiremos evitar que a data seja alterada com o setDate().
-
         this.negociacoes.adiciona(negociacao);
         console.log(this.negociacoes.lista());
         this.limparFormulario();
