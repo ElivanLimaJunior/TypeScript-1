@@ -14,5 +14,3 @@ export class Negociacao {
         return data
     }
 }
-
-// nem sempre o readonly resolve problemas como esse, então um método ou até mesmo um getter, como vimos aqui, pode resolver essa questão da nossa classe.
